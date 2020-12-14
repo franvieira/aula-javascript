@@ -1,13 +1,17 @@
 
 
-var idade = prompt("Qual sua idade?");
-console.log(validarIdade(idade));
+//var idade = prompt("Qual sua idade?");
+//console.log(validarIdade(idade));
+
 
 function validarIdade(idade){
 	var validar;
 	if (idade >= 18){
 		alert("Vamos prosseguir?");
 		return true;
+		
+		
+
 	}else{
 		alert("Página inapropriada para a sua idade!");
 		window.location.href = scr="index.html";
@@ -16,25 +20,25 @@ function validarIdade(idade){
 }
 
 
-function formulario(){
-	alert("teste");
-}
 
 function clicou (){
-	document.getElementById
-}
-
+	var dadosP = ["1 Leticia","2 Alice"];
 	
-function cadastro(){
-	var dadosP =["1 Leticia","2 Alice"];
 	for (var count = 0; count < dadosP.length; count++){
-	console.log(dadosP[count]);	
-	document.getElementById(dadosP);
-	}
 	
+	document.getElementById("cadastro").innerHTML += dadosP[count] + "\n";
+	//document.getElementById("cadastro1").innerHTML = count;
+	console.log(dadosP[count]);
+	
+	}
+}
+
+
 	
 
-}
+
+
+
 
 //console.log(validarIdade(idade));
 
